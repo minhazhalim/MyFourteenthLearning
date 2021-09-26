@@ -1,0 +1,24 @@
+const recipes = document.querySelector('.recipes');
+document.addEventListener('DOMContentLoaded',function(){
+     const sideMenu = document.querySelectorAll('.side-menu');
+     M.Sidenav.init(sideMenu,{edge: 'right'});
+     const sideForm = document.querySelectorAll('.side-form');
+     M.Sidenav.init(sideForm,{edge: 'left'});
+});
+const renderRecipe = (data,id) => {
+     const hyperTextMarkupLanguage = `
+          <div class="card-panel recipe white row" data-id="${id}">
+               <img src="./images/dish.png" alt="recipe thumb">
+               <div class="recipe-details">
+                    <div class="recipe-title">${data.name}</div>
+                    <div class="recipe-ingredients">${data.ingredients}</div>
+               </div>
+               <div class="recipe-delete"><i class="material-icons" data-id="${id}">delete_outline</i></div>
+          </div>
+     `;
+     recipes.innerHTML += hyperTextMarkupLanguage;
+};
+const removeRecipe = (id) => {
+     const recipe = document.querySelector(`.recipe[data-id=${id}]`);
+     recipe.remove();
+};
