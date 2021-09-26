@@ -1,20 +1,50 @@
 {
-     "name": "Minhaz Progressive Web Application Example",
-     "short_name": "Minhaz PWA Ex",
-     "start_url": ".",
-     "background_color": "#6dcdb1",
-     "theme_color": "#009578",
-     "display": "standalone",
+     "name": "Food Ninja",
+     "short_name": "FoodNinja",
+     "start_url": "index.html",
+     "background_color": "#FFE9D2",
+     "theme_color": "#FFE1C4",
+     "orientation": "portrait-primary",
      "icons": [
           {
-               "source": "/images/logo192.png",
-               "sizes": "192x192",
-               "type": "image/png"
+               "source": "./pictures/icon-72x72.png",
+               "type": "image/png",
+               "size": "72x72"
           },
           {
-               "source": "/images/logo512.png",
-               "sizes": "512x512",
-               "type": "image/png"
+               "source": "./pictures/icon-96x96.png",
+               "type": "image/png",
+               "size": "96x96"
+          },
+          {
+               "source": "./pictures/icon-128x128.png",
+               "type": "image/png",
+               "size": "128x128"
+          },
+          {
+               "source": "./pictures/icon-144x144.png",
+               "type": "image/png",
+               "size": "144x144"
+          },
+          {
+               "source": "./pictures/icon-152x152.png",
+               "type": "image/png",
+               "size": "152x152"
+          },
+          {
+               "source": "./pictures/icon-192x192.png",
+               "type": "image/png",
+               "size": "192x192"
+          },
+          {
+               "source": "./pictures/icon-384x384.png",
+               "type": "image/png",
+               "size": "384x384"
+          },
+          {
+               "source": "./pictures/icon-512x512.png",
+               "type": "image/png",
+               "size": "512x512"
           }
      ]
 }
